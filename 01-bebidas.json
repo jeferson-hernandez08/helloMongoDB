@@ -21,5 +21,93 @@
         "cantidad" : 1,
         "stock" : 15,
         "disponible" : true
+    },
+    {
+        "nombre" : "Ana",
+        "bebidas" : "Café Latte",
+        "disponible" : true
     }
 ]
+
+// Tarea # 1:
+{
+    "nombre": "Karen",
+    "apellido": "Díaz",
+    "edad": 7,
+    "calificaciones": [
+        {
+        "nota": 15,
+        "tipo": "Examen"
+        },
+        {
+        "nota": 18,
+        "tipo": "Práctica"
+        },
+        {
+        "nota": 17,
+        "tipo": "Tarea"
+        }
+    ]
+}
+
+[
+    {
+        "nombre": "Miguel",
+        "apellido": "Rodríguez",
+        "edad": 8,
+        "calificaciones": [
+            {
+            "nota": 16,
+            "tipo": "Examen"
+            },
+            {
+            "nota": 14,
+            "tipo": "Práctica"
+            },
+            {
+            "nota": 19,
+            "tipo": "Tarea"
+            }
+        ]
+    },
+    {
+        "nombre": "Sofía",
+        "apellido": "Martínez",
+        "edad": 7,
+        "calificaciones": [
+            {
+            "nota": 20,
+            "tipo": "Examen"
+            },
+            {
+            "nota": 17,
+            "tipo": "Práctica"
+            },
+            {
+            "nota": 18,
+            "tipo": "Tarea"
+            }
+        ]
+    },
+    {
+        "nombre": "Carlos",
+        "apellido": "López",
+        "edad": 9,
+        "calificaciones": [
+            {
+            "nota": 13,
+            "tipo": "Examen"
+            },
+            {
+            "nota": 16,
+            "tipo": "Práctica"
+            },
+            {
+            "nota": 15,
+            "tipo": "Tarea"
+            }
+        ]
+    }
+
+]
+

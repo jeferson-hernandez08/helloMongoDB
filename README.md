@@ -1,6 +1,6 @@
 # 🍃 Curso de MongoDB - De Cero a Experto
 
-![MongoDB Banner](./assets/mongodb-banner.png)
+![MongoDB Banner](./assets/imgMongo.png)
 
 <div align="center">
 

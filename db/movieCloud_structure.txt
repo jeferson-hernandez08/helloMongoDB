@@ -1,0 +1,218 @@
+[
+  {
+    "_id": ObjectId("64addedac311fdc9bd2e3dda"),
+    "movieID": 'mv01',
+    "title": 'Avatar',
+    "runtime": 162,
+    "productionCompany": [
+      {
+        "name": 'Ingenious Film Partners',
+        "employee": 70,
+        "salaryAverage": 4000,
+        "hoursWorkedAverage": 9
+      },
+      {
+        "name": 'Twentieth Century Fox Film Corporation',
+        "employee": 70,
+        "salaryAverage": 3500,
+        "hoursWorkedAverage": 10
+      },
+      {
+        "name": 'Dune Entertainment',
+        "employee": 55,
+        "salaryAverage": 3000,
+        "hoursWorkedAverage": 9
+      }
+    ],
+    "language": [ 'English', 'Italiano', 'Latin' ],
+    "ratings": [ 70, 70, 80, 90 ]
+  },
+  {
+    "_id": ObjectId("64addedac311fdc9bd2e3ddb"),
+    "movieID": 'mv02',
+    "title": 'Titanic',
+    "runtime": 194,
+    "productionCompany": [
+      {
+        "name": 'Twentieth Century Fox Film Corporation',
+        "employee": 70,
+        "salaryAverage": 4500,
+        "hoursWorkedAverage": 8
+      },
+      {
+        "name": 'Paramount Pictures',
+        "employee": 80,
+        "salaryAverage": 4000,
+        "hoursWorkedAverage": 11
+      }
+    ],
+    "language": [ 'English', 'Italiano', 'Latin' ],
+    "ratings": [ 80, 95, 75, 60 ]
+  },
+  {
+    "_id": ObjectId("64addedac311fdc9bd2e3ddc"),
+    "movieID": 'mv03',
+    "title": 'Iron Man 3',
+    "runtime": 130,
+    "productionCompany": [
+      {
+        "name": 'Marvel Studios',
+        "employee": 100,
+        "salaryAverage": 3500,
+        "hoursWorkedAverage": 8
+      }
+    ],
+    "language": [ 'English', 'Italiano', 'Latin' ],
+    "ratings": [ 80, 85, 80, 80 ]
+  },
+  {
+    "_id": ObjectId("64addedac311fdc9bd2e3ddd"),
+    "movieID": 'mv04',
+    "title": 'Jurassic World',
+    "runtime": 124,
+    "productionCompany": [
+      {
+        "name": 'Universal Studios',
+        "employee": 90,
+        "salaryAverage": 3000,
+        "hoursWorkedAverage": 10
+      },
+      {
+        "name": 'Fuji Television Network',
+        "employee": 70,
+        "salaryAverage": 4000,
+        "hoursWorkedAverage": 9
+      },
+      {
+        "name": 'Amblin Entertainment',
+        "employee": 55,
+        "salaryAverage": 3000,
+        "hoursWorkedAverage": 9
+      }
+    ],
+    "language": [ 'English', 'Italiano', 'Latin' ],
+    "ratings": [ 65, 60, 80, 85 ]
+  },
+  {
+    "_id": ObjectId("64addedac311fdc9bd2e3dde"),
+    "movieID": 'mv05',
+    "title": 'Transformers: Age of Extinction',
+    "runtime": 165,
+    "productionCompany": [
+      {
+        "name": 'China Movie Channel',
+        "employee": 32,
+        "salaryAverage": 2000,
+        "hoursWorkedAverage": 8
+      },
+      {
+        "name": 'Hasbro Studios',
+        "employee": 46,
+        "salaryAverage": 2500,
+        "hoursWorkedAverage": 8
+      },
+      {
+        "name": 'Paramount Pictures',
+        "employee": 81,
+        "salaryAverage": 3000,
+        "hoursWorkedAverage": 7
+      },
+      {
+        "name": 'Amblin Entertainment',
+        "employee": 75,
+        "salaryAverage": 3300,
+        "hoursWorkedAverage": 10
+      }
+    ],
+    "language": [ 'English', 'Italiano', 'Latin' ],
+    "ratings": [ 83, 83, 75, 75 ]
+  },
+  {
+    "_id": ObjectId("64addedac311fdc9bd2e3ddf"),
+    "movieID": 'mv06',
+    "title": 'Toy Story 3',
+    "runtime": 103,
+    "productionCompany": [
+      {
+        "name": 'Walt Disney Pictures',
+        "employee": 77,
+        "salaryAverage": 3700,
+        "hoursWorkedAverage": 8
+      },
+      {
+        "name": 'Pixar Animation Studios',
+        "employee": 83,
+        "salaryAverage": 3800,
+        "hoursWorkedAverage": 8
+      }
+    ],
+    "language": [ 'English', 'Italiano', 'Latin' ],
+    "ratings": [ 75, 85, 75, 92 ]
+  },
+  {
+    "_id": ObjectId("64addedac311fdc9bd2e3de0"),
+    "movieID": 'mv07',
+    "title": 'Minions',
+    "runtime": 91,
+    "productionCompany": [
+      {
+        "name": 'Universal Pictures',
+        "employee": 57,
+        "salaryAverage": 3900,
+        "hoursWorkedAverage": 10
+      },
+      {
+        "name": 'Illumination Entertaiment',
+        "employee": 90,
+        "salaryAverage": 2900,
+        "hoursWorkedAverage": 8
+      }
+    ],
+    "language": [ 'English', 'Italiano', 'Latin' ],
+    "ratings": [ 85, 85, 70, 80 ]
+  },
+  {
+    "_id": ObjectId("64ae020ce7af54ab93d379de"),
+    "movieID": 'mv08',
+    "productionCompany": [
+      {
+        "name": 'Marvel Studios',
+        "employee": 83,
+        "salaryAverage": 3300,
+        "hoursWorkedAverage": 7
+      },
+      {
+        "name": 'Studio Babelsberg',
+        "employee": 56,
+        "salaryAverage": 3800,
+        "hoursWorkedAverage": 8
+      }
+    ],
+    "runtime": 147,
+    "title": 'Captain America: Civil War',
+    "language": [ 'English', 'Italiano', 'Latin' ],
+    "ratings": [ 75, 70, 97, 88 ]
+  },
+  {
+    "_id": ObjectId("64ae05d3e7af54ab93d37ab5"),
+    "movieID": 'mv09',
+    "productionCompany": [
+      {
+        "name": 'Marvel Studios',
+        "employee": 81,
+        "salaryAverage": 3700,
+        "hoursWorkedAverage": 10
+      },
+      {
+        "name": 'Studio Babelsberg',
+        "employee": 63,
+        "salaryAverage": 3900,
+        "hoursWorkedAverage": 9
+      }
+    ],
+    "runtime": 100,
+    "title": 'Finding Nemo',
+    "language": [ 'English', 'Italiano', 'Latin' ],
+    "ratings": [ 77, 89, 69, 95 ]
+  }
+]

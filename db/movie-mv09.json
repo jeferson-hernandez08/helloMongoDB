@@ -1,0 +1,54 @@
+db.movie.updateOne( 
+    { "movieID": "mv09" }, 
+    {
+        $setOnInsert: {
+            "title": "Finding Nemo",
+            "runtime": 100,
+            "voteAverage": 7.6,
+            "dateRelease": new Date("2003-05-30"),
+            "dateExpired": new Date("2029-12-31"),
+            "lastView": new Date("2024-09-01"),
+            "isView": false,
+            "productionCompany": [
+                {
+                    "name": "Marvel Studios",
+                    "country": "United States"
+                },
+                {
+                    "name": "Studio Babelsberg",
+                    "country": "Germany"
+                }
+            ]
+        }
+    }
+)
+
+
+
+
+
+db.movie.updateOne( 
+    { "movieID": "mv09" }, 
+    {
+        $setOnInsert: {
+            "title": "Finding Nemo",
+            "runtime": 100,
+            "voteAverage": 7.6,
+            "dateRelease": new Date("2003-05-30"),
+            "dateExpired": new Date("2029-12-31"),
+            "lastView": new Date("2024-09-01"),
+            "isView": false,
+            "productionCompany": [
+                {
+                    "name": "Marvel Studios",
+                    "country": "United States"
+                },
+                {
+                    "name": "Studio Babelsberg",
+                    "country": "Germany"
+                }
+            ]
+        }
+    },
+    { upsert: true }
+)

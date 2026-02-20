@@ -1,0 +1,27 @@
+{
+    "movieID": "mv08",
+    "title": "Captain America: Civil War",
+    "runtime": 147,
+    "voteAverage": 1.0,
+    "dateRelease": new Date("2016-04-27"),
+    "dateExpired": new Date("2028-01-01"),
+    "lastView": new Date("2018-08-08"),
+    "isView": false,
+    "productionCompany": [
+        {
+            "name": "Marvel Studios",
+            "country": "United States"
+        },
+        {
+            "name": "Studio Babelsberg",
+            "country": "Germany"
+        }
+    ]
+}
+
+
+db.movie.updateOne( { "movieID": "mv08" }, { $set: { "title": "Captain America: Civil War", "runtime": 147, "voteAverage": 1.0, "dateRelease": new Date("2016-04-27"), "dateExpired": new Date("2028-01-01"), "lastView": new Date("2018-08-08"), "isView": false, "productionCompany": [ { "name": "Marvel Studios", "country": "United States" }, { "name": "Studio Babelsberg", "country": "Germany" } ] } } )
+
+
+
+db.movie.updateOne( { "movieID": "mv08" }, { $set: { "title": "Captain America: Civil War", "runtime": 147, "voteAverage": 1.0, "dateRelease": new Date("2016-04-27"), "dateExpired": new Date("2028-01-01"), "lastView": new Date("2018-08-08"), "isView": false, "productionCompany": [ { "name": "Marvel Studios", "country": "United States" }, { "name": "Studio Babelsberg", "country": "Germany" } ] } }, { upsert: true } )

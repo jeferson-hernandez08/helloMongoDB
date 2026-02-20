@@ -1,0 +1,331 @@
+db.movie.updateOne(
+  {
+    "movieID": "mv01"
+  },
+  {
+    $unset: {
+      "voteAverage": "",
+      "dateRelease": "",
+      "dateExpired": "",
+      "lastView": "",
+      "isView": "",
+      "price": ""
+    },
+    $set: {
+      "ratings": [ 70, 70, 80, 90 ],
+      "language": [ "English", "Italiano", "Latin" ],
+      "productionCompany": [
+        {
+          "name": "Ingenious Film Partners",
+          "employee": 70,
+          "salaryAverage": 4000,
+          "hoursWorkedAverage": 9
+        },
+        {
+          "name": "Twentieth Century Fox Film Corporation",
+          "employee": 70,
+          "salaryAverage": 3500,
+          "hoursWorkedAverage": 10
+        },
+        {
+          "name": "Dune Entertainment",
+          "employee": 55,
+          "salaryAverage": 3000,
+          "hoursWorkedAverage": 9
+        }
+      ]
+    }
+  }
+);
+
+
+db.movie.updateOne(
+  {
+    "movieID": "mv02"
+  },
+  {
+    $unset: {
+      "voteAverage": "",
+      "dateRelease": "",
+      "dateExpired": "",
+      "lastView": "",
+      "isView": "",
+      "price": ""
+    },
+    $set: {
+      "ratings": [ 80, 95, 75, 60 ],
+      "language": [ "English", "Italiano", "Latin" ],
+      "productionCompany": [
+        {
+          "name": "Twentieth Century Fox Film Corporation",
+          "employee": 70,
+          "salaryAverage": 4500,
+          "hoursWorkedAverage": 8
+        },
+        {
+          "name": "Paramount Pictures",
+          "employee": 80,
+          "salaryAverage": 4000,
+          "hoursWorkedAverage": 11
+        }
+      ]
+    }
+  }
+);
+
+
+db.movie.updateOne(
+  {
+    "movieID": "mv03"
+  },
+  {
+    $unset: {
+      "voteAverage": "",
+      "dateRelease": "",
+      "dateExpired": "",
+      "lastView": "",
+      "isView": "",
+      "price": ""
+    },
+    $set: {
+      "ratings": [ 80, 85, 80, 80 ],
+      "language": [ "English", "Italiano", "Latin" ],
+      "productionCompany": [
+        {
+          "name": "Marvel Studios",
+          "employee": 100,
+          "salaryAverage": 3500,
+          "hoursWorkedAverage": 8
+        }
+      ]
+    }
+  }
+);
+
+
+db.movie.updateOne(
+  {
+    "movieID": "mv04"
+  },
+  {
+    $unset: {
+      "voteAverage": "",
+      "dateRelease": "",
+      "dateExpired": "",
+      "lastView": "",
+      "isView": "",
+      "price": ""
+    },
+    $set: {
+      "ratings": [ 65, 60, 80, 85 ],
+      "language": [ "English", "Italiano", "Latin" ],
+      "productionCompany": [
+        {
+          "name": "Universal Studios",
+          "employee": 90,
+          "salaryAverage": 3000,
+          "hoursWorkedAverage": 10
+        },
+        {
+          "name": "Fuji Television Network",
+          "employee": 70,
+          "salaryAverage": 4000,
+          "hoursWorkedAverage": 9
+        },
+        {
+          "name": "Amblin Entertainment",
+          "employee": 55,
+          "salaryAverage": 3000,
+          "hoursWorkedAverage": 9
+        }
+      ]
+    }
+  }
+);
+
+
+db.movie.updateOne(
+  {
+    "movieID": "mv05"
+  },
+  {
+    $unset: {
+      "voteAverage": "",
+      "dateRelease": "",
+      "dateExpired": "",
+      "lastView": "",
+      "isView": "",
+      "price": ""
+    },
+    $set: {
+      "ratings": [ 83, 83, 75, 75 ],
+      "language": [ "English", "Italiano", "Latin" ],
+      "productionCompany": [
+        {
+          "name": "China Movie Channel",
+          "employee": 32,
+          "salaryAverage": 2000,
+          "hoursWorkedAverage": 8
+        },
+        {
+          "name": "Hasbro Studios",
+          "employee": 46,
+          "salaryAverage": 2500,
+          "hoursWorkedAverage": 8
+        },
+        {
+          "name": "Paramount Pictures",
+          "employee": 81,
+          "salaryAverage": 3000,
+          "hoursWorkedAverage": 7
+        },
+        {
+          "name": "Amblin Entertainment",
+          "employee": 75,
+          "salaryAverage": 3300,
+          "hoursWorkedAverage": 10
+        }
+      ]
+    }
+  }
+);
+
+
+db.movie.updateOne(
+  {
+    "movieID": "mv06"
+  },
+  {
+    $unset: {
+      "voteAverage": "",
+      "dateRelease": "",
+      "dateExpired": "",
+      "lastView": "",
+      "isView": "",
+      "price": ""
+    },
+    $set: {
+      "ratings": [ 75, 85, 75, 92 ],
+      "language": [ "English", "Italiano", "Latin" ],
+      "productionCompany": [
+        {
+          "name": "Walt Disney Pictures",
+          "employee": 77,
+          "salaryAverage": 3700,
+          "hoursWorkedAverage": 8
+        },
+        {
+          "name": "Pixar Animation Studios",
+          "employee": 83,
+          "salaryAverage": 3800,
+          "hoursWorkedAverage": 8
+        }
+      ]
+    }
+  }
+);
+
+
+db.movie.updateOne(
+  {
+    "movieID": "mv07"
+  },
+  {
+    $unset: {
+      "voteAverage": "",
+      "dateRelease": "",
+      "dateExpired": "",
+      "lastView": "",
+      "isView": "",
+      "price": ""
+    },
+    $set: {
+      "ratings": [ 85, 85, 70, 80 ],
+      "language": [ "English", "Italiano", "Latin" ],
+      "productionCompany": [
+        {
+          "name": "Universal Pictures",
+          "employee": 57,
+          "salaryAverage": 3900,
+          "hoursWorkedAverage": 10
+        },
+        {
+          "name": "Illumination Entertaiment",
+          "employee": 90,
+          "salaryAverage": 2900,
+          "hoursWorkedAverage": 8
+        }
+      ]
+    }
+  }
+);
+
+
+db.movie.updateOne(
+  {
+    "movieID": "mv08"
+  },
+  {
+    $unset: {
+      "voteAverage": "",
+      "dateRelease": "",
+      "dateExpired": "",
+      "lastView": "",
+      "isView": "",
+      "price": ""
+    },
+    $set: {
+      "ratings": [ 75, 70, 97, 88 ],
+      "language": [ "English", "Italiano", "Latin" ],
+      "productionCompany": [
+        {
+          "name": "Marvel Studios",
+          "employee": 83,
+          "salaryAverage": 3300,
+          "hoursWorkedAverage": 7
+        },
+        {
+          "name": "Studio Babelsberg",
+          "employee": 56,
+          "salaryAverage": 3800,
+          "hoursWorkedAverage": 8
+        }
+      ]
+    }
+  }
+);
+
+
+db.movie.updateOne(
+  {
+    "movieID": "mv09"
+  },
+  {
+    $unset: {
+      "voteAverage": "",
+      "dateRelease": "",
+      "dateExpired": "",
+      "lastView": "",
+      "isView": "",
+      "price": ""
+    },
+    $set: {
+      "ratings": [ 77, 89, 69, 95 ],
+      "language": [ "English", "Italiano", "Latin" ],
+      "productionCompany": [
+        {
+          "name": "Marvel Studios",
+          "employee": 81,
+          "salaryAverage": 3700,
+          "hoursWorkedAverage": 10
+        },
+        {
+          "name": "Studio Babelsberg",
+          "employee": 63,
+          "salaryAverage": 3900,
+          "hoursWorkedAverage": 9
+        }
+      ]
+    }
+  }
+);

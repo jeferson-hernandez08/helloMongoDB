@@ -1,0 +1,63 @@
+[
+    {
+        "_id": 12345,
+        "nombre": "Steven",
+        "DNI_CI": 99887766,
+        "movil": 987654321,
+        "email": null,
+        "direccion": {
+            "ciudad": "Lima",
+            "calle": "Av. España 123"
+        },
+        "automovil":[
+            {
+                "matricula": "ZZ-4422",
+                "año": "2023",
+                "marca": "MAZDA",
+                "modelo": "CX-5",
+                "color": "Rojo"
+            },
+            {
+                "matricula": "AA-9911",
+                "año": "2022",
+                "marca": "KIA",
+                "modelo": "Rio Sedán",
+                "color": "Gris"
+            }
+        ]
+    },
+    {
+        "_id": 12346,
+        "nombre": "Jessica",
+        "DNI_CI": 11223344,
+        "movil": 912345678,
+        "email": null,
+        "direccion": {
+            "ciudad": "Lima",
+            "calle": "Av. Brasil 111"
+        },
+        "automovil":[
+            {
+                "matricula": "NN-1888",
+                "año": "2023",
+                "marca": "KIA",
+                "modelo": "Seltos",
+                "color": "Blanco"
+            },
+            {
+                "matricula": "AB-1234",
+                "año": "2022",
+                "marca": "JEEP",
+                "modelo": "Gladiator Rubicon",
+                "color": "Rojo"
+            },
+            {
+                "matricula": "YZ-5566",
+                "año": "2021",
+                "marca": "CHEVROLET",
+                "modelo": "Groove",
+                "color": "Rojo"
+            }
+        ]
+    }
+]

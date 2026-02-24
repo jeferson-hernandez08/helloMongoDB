@@ -1,0 +1,14 @@
+{
+    "nombreColegio": "Colegio Alta Enseñanza",
+    "codigoModular": 12345678,
+    "ciudad": ["Lima"],
+    "direccion": "Av. Alta Enseñanza 987",
+    "telefono": "0123456789",
+    "tipoColegio": "Público",
+    "fechaFundación": new Date("1990-03-01"),
+    "director": {
+        "nombre": "Oscar",
+        "apellido": "Gallegos",
+        "email": "oscar.gallegos@example.com.edu"
+    }
+}

@@ -1,0 +1,200 @@
+
+{
+    "_id": 1,
+    "nombre": "Ricardo",
+    "apellido": "Gamboa",
+    "edad": 62,
+    "fechaNacimiento": new Date("1962-12-29"),
+    "fechaContratacion": new Date("1986-01-01"),
+    "anioExperiencia": 38,
+    "cargo": "Capitán",
+    "barco": {
+        "tipo": "Crucero",
+        "nombre": "Estrella Polar",
+        "capacidadPasajero": 6988,
+        "tripulacion": 2300,
+        "cubierta": 18,
+        "velocidadNudos": 22,
+        "inaguracion": new Date("2014-01-01"),
+        "partida": {
+            "pais": "España",
+            "ciudad": "Valencia",
+            "puerto": "Puerto de Valencia",
+            "fechaPartida": new Date("2024-01-01"),
+        },
+        "llegada": {
+            "pais": "Perú",
+            "ciudad": "Pisco",
+            "puerto": "Puerto de Pisco",
+            "fechaLlegada": new Date("2024-01-20"),
+        },
+        "dimensiones": {
+            "alto": "70m",
+            "ancho": "64m",
+            "eslora": {
+                "esloraEntrePerpendiculares": "300m",
+                "esloraDeFlotacion": "320m",
+                "esloraMaxima": "350m",
+                "esloraTotal": "362m"
+            }
+        },
+        "servicios":{
+            "tv": true,
+            "piscina": true,
+            "restaurante": true,
+            "bar": true,
+            "salaJuegos": true,
+            "tienda": true
+        },
+        "viajesRealizados": 300,
+        "toneladas": 231000,
+        "mantenimiento": new Date("2023-07-01"),
+        "ultimaRemodelacion": null,
+        "bandera": "Española",
+        "navegacion": [
+            "Chartplotter",
+            "Radar",
+            "Ecosonda",
+            "Instrumento de viento náutico",
+            "Piloto automatico",
+            "2x VHF radio",
+            "2x HF radio",
+            "Sistema de comunicación satelital",
+            "Walkie-talkies"
+        ],
+        "seguridad": [
+            "EPIRB radiobalizas",
+            "Balsas salvavidas",
+            "Aros salvavidas",
+            "Chalecos salvavidas",
+            "Trajes de supervivencia",
+            "Kits de bengalas/botes humo/paracaídas",
+            "SART",
+            "Extintores de incendios",
+            "Radio VHF portátil"
+        ],
+        "ratioEspacioComunes": "7.6m por pasajero",
+        "puentes": "13, de los cuales 9 para pasajeros",
+        "ascensores": "26, de los cuales 17 son para los pasajeros",
+        "tensionElectrica": "110/220 voltios",
+        "estabilizador": "Estabilizadores 2 con aletas",
+        "motor":{
+            "diametro": "4m-6m",
+            "rpm": [100, 150],
+            "caballoFuerza": 30000,
+            "tipo": "diesel"
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+db.capitan.insertOne(
+    {
+        "_id": 10,
+        "nombre": "Ricardo",
+        "apellido": "Gamboa",
+        "edad": 62,
+        "fechaNacimiento": new Date("1962-12-29"),
+        "fechaContratacion": new Date("1986-01-01"),
+        "anioExperiencia": 38,
+        "cargo": "Capitán"
+    }
+)
+
+
+db.barco.insertOne(
+    {
+        "_id": 100,
+        "capitan_id": 10,
+        "tipo": "Crucero",
+        "nombre": "Estrella Polar",
+        "capacidadPasajero": 6988,
+        "tripulacion": 2300,
+        "cubierta": 18,
+        "velocidadNudos": 22,
+        "inaguracion": new Date("2014-01-01"),
+        "partida": {
+            "pais": "España",
+            "ciudad": "Valencia",
+            "puerto": "Puerto de Valencia",
+            "fechaPartida": new Date("2024-01-01"),
+        },
+        "llegada": {
+            "pais": "Perú",
+            "ciudad": "Pisco",
+            "puerto": "Puerto de Pisco",
+            "fechaLlegada": new Date("2024-01-20"),
+        },
+        "dimensiones": {
+            "alto": "70m",
+            "ancho": "64m",
+            "eslora": {
+                "esloraEntrePerpendiculares": "300m",
+                "esloraDeFlotacion": "320m",
+                "esloraMaxima": "350m",
+                "esloraTotal": "362m"
+            }
+        },
+        "servicios":{
+            "tv": true,
+            "piscina": true,
+            "restaurante": true,
+            "bar": true,
+            "salaJuegos": true,
+            "tienda": true
+        }
+    }
+)
+
+
+db.detalle_barco.insertOne(
+    {
+        "_id": 1000,
+        "barco_id": 100,
+        "viajesRealizados": 300,
+        "toneladas": 231000,
+        "mantenimiento": new Date("2023-07-01"),
+        "ultimaRemodelacion": null,
+        "bandera": "Española",
+        "navegacion": [
+            "Chartplotter",
+            "Radar",
+            "Ecosonda",
+            "Instrumento de viento náutico",
+            "Piloto automatico",
+            "2x VHF radio",
+            "2x HF radio",
+            "Sistema de comunicación satelital",
+            "Walkie-talkies"
+        ],
+        "seguridad": [
+            "EPIRB radiobalizas",
+            "Balsas salvavidas",
+            "Aros salvavidas",
+            "Chalecos salvavidas",
+            "Trajes de supervivencia",
+            "Kits de bengalas/botes humo/paracaídas",
+            "SART",
+            "Extintores de incendios",
+            "Radio VHF portátil"
+        ],
+        "ratioEspacioComunes": "7.6m por pasajero",
+        "puentes": "13, de los cuales 9 para pasajeros",
+        "ascensores": "26, de los cuales 17 son para los pasajeros",
+        "tensionElectrica": "110/220 voltios",
+        "estabilizador": "Estabilizadores 2 con aletas",
+        "motor":{
+            "diametro": "4m-6m",
+            "rpm": [100, 150],
+            "caballoFuerza": 30000,
+            "tipo": "diesel"
+        }
+    }
+)

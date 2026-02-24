@@ -1,0 +1,26 @@
+
+{
+    "user": "Cristian Donayre",
+    "activeUser": true,
+    "email": null,
+    "name": {
+        "firstName": "Cristian",
+        "middleName": null,
+        "lastName": "Donayre"
+    },
+    "skills": [ "MongoDB", "SQL Server", "Python" ],
+    "comment": [
+        {
+            "course": "MongoDB",
+            "text": "Very good course"
+        },
+        {
+            "course": "SQL Server",
+            "text": "Excellent course, I recommend it."
+        },
+        {
+            "course": "Python",
+            "text": "Python is a very easy language to learn."
+        }
+    ]
+}

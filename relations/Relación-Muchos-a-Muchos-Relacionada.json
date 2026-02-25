@@ -1,0 +1,228 @@
+{
+    "_id": 10101,
+    "nombre": "Fernanda",
+    "movil": 987654321,
+    "email": null,
+    "tipoPago": "Efectivo",
+    "direccion": {
+        "ciudad": "Lima",
+        "calle": "Av. España 123"
+    },
+    "producto": [
+        {
+            "nombreProducto": "Tomate Italiano",
+            "cantidad": 3,
+            "descripcion": "3kg de tomate italiano",
+            "precioUnitario": 3,
+            "precioTotal": 9
+        },
+        {
+            "nombreProducto": "Queso",
+            "cantidad": 1,
+            "descripcion": null,
+            "precioUnitario": 11.50,
+            "precioTotal": 11.50
+        }
+
+    ]
+}
+
+
+
+db.cliente.insertMany(
+    [
+        {
+            "_id": 10101,
+            "nombre": "Fernanda",
+            "movil": 987654321,
+            "email": null,
+            "tipoPago": "Efectivo",
+            "direccion": {
+                "ciudad": "Lima",
+                "calle": "Av. España 123"
+            }
+        },
+        {
+            "_id": 10102,
+            "nombre": "Frank",
+            "movil": 978654376,
+            "email": null,
+            "tipoPago": "Efectivo",
+            "direccion": {
+                "ciudad": "Lima",
+                "calle": "Jr. de la historia 111"
+            }
+        },
+        {
+            "_id": 10103,
+            "nombre": "Antonio",
+            "movil": 998877665,
+            "email": null,
+            "tipoPago": "Tarjeta",
+            "direccion": {
+                "ciudad": "Lima",
+                "calle": "Av. Brasil 333"
+            }
+        }
+    ]
+);
+
+
+
+db.producto.insertMany(
+    [
+        {
+            "_id": "p101",
+            "nombreProducto": "Tomate Italiano",
+            "descripcion": "3kg de tomate italiano",
+            "precioUnitario": 3
+        },
+        {
+            "_id": "p102",
+            "nombreProducto": "Queso",
+            "descripcion": null,
+            "precioUnitario": 11.50
+        },
+        {
+            "_id": "p103",
+            "nombreProducto": "Leche",
+            "descripcion": "pack de 6 leches en lata",
+            "precioUnitario": 4.5
+        },
+        {
+            "_id": "p104",
+            "nombreProducto": "Pasta de diente",
+            "descripcion": null,
+            "precioUnitario": 12
+        },
+        {
+            "_id": "p105",
+            "nombreProducto": "Shampoo",
+            "descripcion": "Envase grande de 800ml",
+            "precioUnitario": 36.50
+        },
+        {
+            "_id": "p106",
+            "nombreProducto": "Papel Higiénico",
+            "descripcion": "1 paquete de 6 rollos",
+            "precioUnitario": 8.90
+        }
+    ]
+);
+
+
+// Tabla intermedia muchos a muchos, MongoDB nos usa.
+db.pedido.insertMany(
+    [
+        {
+            "clienteId": 10101,
+            "productoId": "p101"
+        },
+        {
+            "clienteId": 10101,
+            "productoId": "p102"
+        },
+        {
+            "clienteId": 10102,
+            "productoId": "p102"
+        },
+        {
+            "clienteId": 10102,
+            "productoId": "p103"
+        },
+        {
+            "clienteId": 10102,
+            "productoId": "p104"
+        }
+    ]
+);
+
+
+
+
+db.cliente.updateOne(
+    {
+        "_id": 10101,
+    },
+    {
+        $set: {
+            "producto": [
+                {
+                    "productoId": "p101",
+                    "cantidad": 3,
+                    "total": 9
+                },
+                {
+                    "productoId": "p102",
+                    "cantidad": 1,
+                    "total": 11.50
+                },
+                {
+                    "productoId": "p103",
+                    "cantidad": 1,
+                    "total": 27
+                }
+                
+            ]
+        }
+    }
+);
+
+
+db.cliente.updateOne(
+    {
+        "_id": 10102,
+    },
+    {
+        $set: {
+            "producto": [
+                {
+                    "productoId": "p102",
+                    "cantidad": 2,
+                    "total": 23
+                },
+                {
+                    "productoId": "p103",
+                    "cantidad": 2,
+                    "total": 54
+                },
+                {
+                    "productoId": "p104",
+                    "cantidad": 1,
+                    "total": 12
+                }
+                
+            ]
+        }
+    }
+);
+
+
+
+db.cliente.updateOne(
+    {
+        "_id": 10103,
+    },
+    {
+        $set: {
+            "producto": [
+                {
+                    "productoId": "p104",
+                    "cantidad": 1,
+                    "total": 12
+                },
+                {
+                    "productoId": "p105",
+                    "cantidad": 1,
+                    "total": 36.50
+                },
+                {
+                    "productoId": "p106",
+                    "cantidad": 1,
+                    "total": 8.90
+                }
+                
+            ]
+        }
+    }
+);

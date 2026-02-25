@@ -1,0 +1,38 @@
+db.curso.insertOne(
+    {
+        "_id": 1001,
+        "titulo": "MongoDB",
+        "subtitulo": "Guia completa de MongoDB, aprenderás desde el nivel básico hasta experto.",
+        "descripcion": "El curso está dirigido a las personas interesadas en aprender la base de datos NoSQL más utilizada en el desarrollo de aplicaciones empresariales y Startup."
+    }
+);
+
+
+db.valoracion.insertMany(
+    [
+        {
+            "_id": "v201",
+            "cursoId": 1001,
+            "nombre": "Bruno",
+            "apellido": "Martínez",
+            "calificacion": 4.5,
+            "comentario": "Muy buen curso, abarca los temas desde cero y te guía paso a paso hasta el nivel avanzado."
+        },
+        {
+            "_id": "v202",
+            "cursoId": 1001,
+            "nombre": "Steven",
+            "apellido": "Gonzáles",
+            "calificacion": 5,
+            "comentario": "Excelente curso, lo recomiendo a todas las personas."
+        },
+        {
+            "_id": "v203",
+            "cursoId": 1001,
+            "nombre": "Laura",
+            "apellido": "Pérez",
+            "calificacion": 5,
+            "comentario": "El curso esta muy bien estructurado y la enseñanza es muy buena."
+        }
+    ]
+)

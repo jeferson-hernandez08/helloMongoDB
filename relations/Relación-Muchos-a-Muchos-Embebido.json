@@ -1,0 +1,68 @@
+[
+    {
+        "_id": "P101",
+        "titulo": "Conectar a MongoDB",
+        "pregunta": "Hola Cristian, como puedo conectame a MongoDB por un puerto en especifico. ",
+        "usuario": "Karen",
+        "apellido": "Ruiz",
+        "categoria": "Estudiante",
+        "clase": "Clase 15",
+        "fecha": new Date("2023-08-01T10:57:57.979Z"),
+        "alumno": [
+            {
+                "nombre": "Cristian",
+                "apellido": "Donayre",
+                "respuesta": "Puedes conectarte con la siguiente instrucción: mongosh --port 28015",
+                "categoria": "Instructor",
+                "fecha": new Date("2023-08-01T12:05:57.979Z")
+            },
+            {
+                "nombre": "Isabel",
+                "apellido": "Bautista",
+                "respuesta": "También puedes utilizar la siguiente instrucción: mongosh mongodb://localhost:28015",
+                "categoria": "Estudiante",
+                "fecha": new Date("2023-08-01T14:00:57.979Z")
+            },
+            {
+                "nombre": "Karen",
+                "apellido": "Ruiz",
+                "respuesta": "Muchas gracias por su ayuda.",
+                "categoria": "Estudiante",
+                "fecha": new Date("2023-08-01T18:15:57.979Z")
+            }
+        ]
+    },
+    {
+        "_id": "P102",
+        "titulo": "Método UPSERT()",
+        "pregunta": "Hola Cristian, quisiera saber si el método upsert() actualmente se utiliza. ",
+        "usuario": "Luis",
+        "apellido": "Reyes",
+        "categoria": "Estudiante",
+        "clase": "Clase 60",
+        "fecha": new Date("2023-08-02T08:00:57.979Z"),
+        "alumno": [
+            {
+                "nombre": "Isabel",
+                "apellido": "Bautista",
+                "respuesta": "Actualmente el metodo UPSERT() se encuentra en desuso.",
+                "categoria": "Estudiante",
+                "fecha": new Date("2023-08-02T09:00:57.979Z")
+            },
+            {
+                "nombre": "Karen",
+                "apellido": "Ruiz",
+                "respuesta": "Puedes utilizar los metodos UpdateOne() o UpdateMany()",
+                "categoria": "Estudiante",
+                "fecha": new Date("2023-08-02T10:00:57.979Z")
+            },
+            {
+                "nombre": "Luis",
+                "apellido": "Reyes",
+                "respuesta": "Me quedó claro, agradezco sus respuestas.",
+                "categoria": "Estudiante",
+                "fecha": new Date("2023-08-02T11:00:57.979Z")
+            }
+        ]
+    }
+]

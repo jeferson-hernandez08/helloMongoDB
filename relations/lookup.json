@@ -1,0 +1,11 @@
+db.cliente.aggregate([
+    {
+        $lookup: {
+            from: "producto",
+            localField: "producto.productoId",
+            foreignField: "_id",
+            as: "detalleCompra"
+        }
+    }
+])
+

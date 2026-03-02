@@ -1,0 +1,14 @@
+[
+    {
+        "nombre": "mouse",
+        "descripcion": "El fmouse es el mejor mouse para tu ordenador, puede conectarse a traves de USB inalambrico o bluettooth."
+    },
+    {
+        "nombre": "teclado",
+        "descripcion": "El teclado blanco de Microsoft es ideal y ligero para tu ordenador, se conecta por bluetooth."
+    },
+    {
+        "nombre": "Monitor",
+        "descripcion": "El monitor LG es ideal para trabajos de diseño y edición de videos para tu ordenador."
+    }
+]

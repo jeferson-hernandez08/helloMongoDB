@@ -40,7 +40,7 @@ def add_product():
 @app.route('/edith_product/<id>')
 def edith_product(id):
     products = db['products']
-    data = products.find_one( { "_id": ObjectId(id) } )
+    data = products.find_one( { "_id": ObjectId(id) } )     # Lo convertimos a tipo de dato ObjectId
     return render_template('edith_product.html', dataProduct = data)
 
 

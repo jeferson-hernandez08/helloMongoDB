@@ -22,3 +22,51 @@
     }
 ]
 
+[
+    {
+        "_id": 103,
+        "nombre": "Jeferson",
+        "apellido": "Hernandez",
+        "cargo": "Developer",
+        "hobbies": [ "Gym", "Running" ]
+    },
+    {
+        "_id": 101,
+        "nombre": "Sebastian",
+        "apellido": "Hernandez",
+        "cargo": "Software Enginner",
+        "hobbies": [ "Tenis", "Natación", "Golf" ]
+    },
+    {
+        "_id": 105,
+        "nombre": "Paola",
+        "apellido": "Acevedo",
+        "cargo": "Business Analytics",
+        "hobbies": [ "Skate", "BMX" ]
+    }
+]
+
+[
+    {
+        "_id": 104,
+        "nombre": "Claudia",
+        "apellido": "Garcia",
+        "cargo": "Developer",
+        "hobbies": [ "Football" ]
+    },
+    {
+        "_id": 103,
+        "nombre": "Juan",
+        "apellido": "Garcia",
+        "cargo": "QA",
+        "hobbies": [ "Tenis", "Golf" ]
+    },
+    {
+        "_id": 106,
+        "nombre": "Arderson",
+        "apellido": "Urruchurtu",
+        "cargo": "Enginner Manager",
+        "hobbies": [ "Running" ]
+    }
+], { ordered: false }
+

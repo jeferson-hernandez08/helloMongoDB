@@ -1,0 +1,31 @@
+// 1. Productos con unitPrice >= 30
+db.product.find(
+  { unitPrice: { $gte: 30 } },
+  { productName: 1, unitPrice: 1, _id: 0 } // opcional: solo mostrar nombre y precio
+)
+
+// 2. Proveedores (suppliers) de productos cuyo país sea "Japan"
+db.product.find(
+  { unitPrice: { $gte: 30 } },
+  { productName: 1, unitPrice: 1, _id: 0 } // opcional: solo mostrar nombre y precio
+)
+
+// 3. Productos que no tienen sucursal en "California" ni "Misuri"
+db.product.find(
+  { branchOffice: { $nin: ["California", "Misuri"] } },
+  { productName: 1, branchOffice: 1, _id: 0 }
+)
+
+// 4. Proveedores (suppliers) de productos con país "USA" y ciudad "Bend"
+db.product.aggregate([
+  { $unwind: "$categories" },
+  { $unwind: "$categories.suppliers" },
+  { $match: { "categories.suppliers.country": "USA", "categories.suppliers.city": "Bend" } },
+  { $replaceRoot: { newRoot: "$categories.suppliers" } }
+])
+
+// 5. Productos cuya categoría sea "Confections" o "Produce"
+db.product.find(
+  { "categories.categoryName": { $in: ["Confections", "Produce"] } },
+  { productName: 1, "categories.categoryName": 1, _id: 0 }
+)

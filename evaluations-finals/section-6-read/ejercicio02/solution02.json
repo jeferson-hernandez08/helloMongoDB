@@ -1,0 +1,73 @@
+// 1. Empleados que tengan el campo target
+db.employee.find(
+  { target: { $exists: true } }
+)
+
+// 2. Empleados que viven en una avenida (campo address contiene "Ave.")
+db.employee.find(
+  { address: { $regex: /Ave\./ } }
+)
+
+// 3. Empleados donde salesAmount > target
+db.employee.find(
+  { $expr: { $gt: ["$salesAmount", "$target"] } }
+)
+// Nota: Se usa $expr para comparar dos campos del mismo documento.
+
+// 4. Empleados que tengan al menos una calificación (score) entre 50 y 59 (>=50 y <60)
+db.employee.find(
+  { score: { $elemMatch: { $gte: 50, $lt: 60 } } }
+)
+
+// 5. Empleados que trabajen en los estados "Yukon" y "Quebec" (ambos presentes en el arreglo state)
+db.employee.find(
+  { state: { $all: ["Yukon", "Quebec"] } }
+)
+
+// 6. Empleados ordenados alfabéticamente por su nombre (firstName)
+db.employee.find().sort({ firstName: 1 })
+
+// 7. Empleados que tengan al menos un pasatiempo (hobbies) con frequency < 3.
+// Mostrar solo el primer elemento de hobbies que cumpla la condición.
+// Se utiliza aggregate con $filter y $arrayElemAt.
+db.employees.aggregate([
+  {
+    $match: {
+      "hobbies.frequency": { $lt: 3 }
+    }
+  },
+  {
+    $addFields: {
+      firstHobbyMatch: {
+        $arrayElemAt: [
+          {
+            $filter: {
+              input: "$hobbies",
+              as: "hobby",
+              cond: { $lt: ["$$hobby.frequency", 3] }
+            }
+          },
+          0
+        ]
+      }
+    }
+  },
+  {
+    $project: {
+      
+      employeeID: 1,
+      firstName: 1,
+      lastName: 1,
+      matchingHobby: "$firstHobbyMatch"
+    }
+  }
+])
+// Explicación:
+// $match filtra empleados que tengan al menos un hobby con frecuencia menor a 3.
+// $filter extrae del arreglo hobbies solo los elementos con frequency < 3.
+// $arrayElemAt toma el primero de ellos (índice 0).
+// $project muestra los campos requeridos y el hobby encontrado.
+db.employee.find(
+  { "hobbies.frequency": { $lt: 3 } },
+  { "hobbies.$": 1, employeeID: 1, firstName: 1, lastName: 1 }
+)
